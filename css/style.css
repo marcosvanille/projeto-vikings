@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+
+
+}
+
+#titulo {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 2px #000;
+    margin-top: 18px;
+
+
+}
+
+.form-check-label{
+    color: aliceblue;
+    font-size: 20px;
+    text-shadow: 1px 2px #000;}
+
+
+.bg {
+    background-image: url("../img/Ti.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    /*margin-top: 175px;*/
+}
+
+.lb {
+    color: aliceblue;
+    font-size: 20px;
+    text-shadow: 1px 2px #000;
+}
+
+
+label.error{
+    color: red;
+    font-size: 20px;
+    text-shadow: 1px 2px #000;
+}
+label.nome-error{
+    color: red;
+    font-size: 20px;
+    text-shadow: 1px 2px #000;
+}

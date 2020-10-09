@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<body class="bg">
+<div class="container">
+    <form action="" method="post" id="formulario">
+        <h1 id="titulo">Cadastro de Funcionarios</h1>
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="nome" class="lb">Nome</label>
+                <input type="text" class="form-control" name="nome" id="nome" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="nome" class="lb">Sobrenome </label>
+                <input type="text" class="form-control" name="sobrenome" id="sobrenome" required>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-8">
+                <label for="email" class="lb">Email:</label>
+                <input type="email" class="form-control" name="email" id="email"/>
+                <span id="error-email"></span>
+            </div>
+
+
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="fone" class="lb">Telefone</label>
+                <input type="text" class="form-control" name="fone" id="fone" placeholder="Telefone" required>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="fone" class="lb">Cpf</label>
+                <input type="text" class="form-control" name="cpf" id="cpf" placeholder="cpf" required>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="fone" class="lb">Cart.trabalho</label>
+                <input type="text" class="form-control" name="cart" id="cart" placeholder="" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputAddress" class="lb">Endereço</label>
+                <input type="text" class="form-control" name="endereco" id="inputAddress" placeholder="">
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="inputAddress" class="lb">Estado</label>
+                <input type="text" class="form-control" name="estado" id="estado" placeholder="">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputCidade" class="lb">Cidade</label>
+                <input type="text" class="form-control" name="cidade" id="inputCidade">
+            </div>
+        </div>
+        <div class="form-row">
+
+
+            <div class="col-md-4">
+                <label for="nome" class="lb">Sexo: </label>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                           value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                           value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Feminino</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="nome" class="lb">Estado Civil: </label>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="casado"
+                           value="casado">
+                    <label class="form-check-label" for="inlineRadio1">Casado</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="solteiro"
+                           value="solteiro">
+                    <label class="form-check-label" for="inlineRadio2">Solteiro</label>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <button type="button" id="botao" class="btn btn-primary">Cadastrar</button>
+    </form>
+
+
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js
+"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.5/jquery.inputmask.bundle.min.js"></script>
+<script src="js/cadastro.js"></script>
+</body>
+
+</body>
+</html>
