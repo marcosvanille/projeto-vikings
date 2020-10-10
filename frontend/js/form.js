@@ -33,7 +33,31 @@ $(document).ready(function () {
 
         }
     });
+
+    $('#botaoTelefone').click(function () {
+        var idTel = Math.floor(Math.random() * 100);
+        $('#tel').append($('<input>', {
+            value: '',
+            text: '',
+            id: 'inputTel_' + idTel
+        }));
+        $('#tel').append($('<button>', {
+            type: 'button',
+            value: idTel,
+            text: 'remover',
+            class: 'buttonTelefone',
+            id: 'buttonTel_' + idTel
+        }));
+        $('.buttonTelefone').click(function () {
+            $( "#inputTel_" + this.value ).remove();
+            $( "#buttonTel_" + this.value ).remove();
+            console.log(this.value);
+        })
+    })
+
 });
+
+
 //MASCARA DE TELEFONE
 $('#fone').inputmask('(99) 9999[9]-9999');
 
@@ -56,3 +80,9 @@ $("#botao").click(function () {
     return false;
 
 })
+
+
+
+
+
+

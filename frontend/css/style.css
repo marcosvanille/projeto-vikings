@@ -21,7 +21,7 @@ body, html {
 
 
 .bg {
-    background-image: url("../img/Ti.jpg ");
+    background-image: url("/projetos/projeto-vikings/frontend/img/Ti.jpg ");
     background-repeat: no-repeat;
     background-size: cover;
 }
