@@ -17,5 +17,8 @@ class conexao
 
 }
 
+$conexao = new conexao;
+
+$conexao->insert();
 
 
