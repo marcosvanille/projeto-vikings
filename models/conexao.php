@@ -2,23 +2,21 @@
 
 class conexao
 {
-    public function insert()
+    public static $instance;
+
+    public static function getConn()
     {
-        $conn = new PDO("mysql:dbname=bancoVikings;host=localhost", "root", "19960709");
+        if (!isset(self::$instance)):
+            self::$instance = new \PDO('mysql:dbname=bancoVikings;host=localhost', 'root', '19960709');
+        endif;
 
-        $stmt = $conn->prepare("SELECT * FROM formulario");
-        $stmt->execute();
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return self::$instance;
 
-        var_dump($results);
+
     }
-
 
 
 }
 
-$conexao = new conexao;
-
-$conexao->insert();
 
 
