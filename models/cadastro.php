@@ -1,9 +1,5 @@
 <?php
 
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: Content-Type");
-header('Content-Type: application/json');
-
 class cadastroFuncionario
 {
     private $id;
@@ -153,7 +149,7 @@ class cadastroFuncionario
 }
 
 $cadastro = new cadastroFuncionario();
-$cadastro->setNome('teste');
+$cadastro->setNome('teste123');
 $cadastro->setSobrenome('teste');
 $cadastro->setEmail('teste');
 $cadastro->setCpf('teste');
@@ -163,9 +159,12 @@ $cadastro->setEstado('teste');
 $cadastro->setCidade('teste');
 $cadastro->setSexo('teste');
 $cadastro->setEstadoCivil('teste');
-//var_dump($cadastro);
+var_dump($cadastro);
 $cadastroDao = new cadastroDao();
 $cadastroDao->create($cadastro);
 
 
 
+foreach ($cadastroDao->read() as $cadastro):
+    echo $cadastro['nome'];
+endforeach;
