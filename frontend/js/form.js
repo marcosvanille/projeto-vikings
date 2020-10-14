@@ -65,9 +65,13 @@ $('#fone').inputmask('(99) 9999[9]-9999');
 $("#botao").click(function () {
 
     $.ajax({
-        url: "http://localhost/projetos/formulario-GSbombas/teste-php/teste.php",
+        url: "http://localhost/projetos/projeto-vikings/controllers/funcionario.php",
         type: 'POST',
         data: $('#formulario').serialize(),
+        // data: {
+        //     nome: $('#nome').val(),
+        //     sobrenome: $('#sobrenome').val()
+        // },
         success: function (data) {
             alert('Cadastrado com sucesso!')
             console.log(data);

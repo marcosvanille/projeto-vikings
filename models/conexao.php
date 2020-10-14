@@ -1,11 +1,10 @@
 <?php
 
-class conexao
+class Conexao
 {
     public static $instance;
 
-    private function __construct()
-    {}
+
 
     public static function getConn()
     {

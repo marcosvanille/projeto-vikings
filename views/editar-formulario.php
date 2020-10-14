@@ -11,7 +11,7 @@
 <body class="bg">
 <div class="container">
     <form action="" method="post" id="formulario">
-        <h1 id="titulo">Cadastro de Funcionarios</h1>
+        <h1 id="titulo">Alterar Cadastro de Funcionário</h1>
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="nome" class="lb">Nome</label>
@@ -30,12 +30,12 @@
                 <input type="email" class="form-control" name="email" id="email"/>
                 <span id="error-email"></span>
             </div>
-
+            <form>
                 <div class="form-group">
-                    <label for="foto" class="lb">Adicionar Foto</label>
-                    <input type="file" class="form-control-file lb" id="foto" name="foto">
+                    <label for="exampleFormControlFile1" class="lb">Adicionar Foto</label>
+                    <input type="file" class="form-control-file lb" id="exampleFormControlFile1">
                 </div>
-
+            </form>
 
         </div>
         <div class="form-row">
@@ -77,36 +77,33 @@
                 <label for="nome" class="lb">Sexo: </label>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sexo" id="masculino"
-                           value="m">
-                    <label class="form-check-label" for="masculino">Masculino</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                           value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Masculino</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sexo" id="feminino"
-                           value="f">
-                    <label class="form-check-label" for="feminino">Feminino</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                           value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Feminino</label>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="nome" class="lb">Estado Civil: </label>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="estadocivil" id="casado"
-                           value="c">
-                    <label class="form-check-label" for="casado">Casado</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="casado"
+                           value="casado">
+                    <label class="form-check-label" for="inlineRadio1">Casado</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="estadocivil" id="solteiro"
-                           value="s">
-                    <label class="form-check-label" for="solteiro">Solteiro</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="solteiro"
+                           value="solteiro">
+                    <label class="form-check-label" for="inlineRadio2">Solteiro</label>
                 </div>
             </div>
         </div>
-        <button type="button" id="botao" name="botao" class="btn btn-primary">Cadastrar</button>
-        <a href="lista.php">
-            <button type="button" class="btn btn-warning">Lista</button>
-        </a>
-    </form>
+        <button type="submit" class="btn btn-danger" >Alterar</button>
+        <a href="lista.php" class="btn btn-primary">voltar</a></a>    </form>
 
 </div>
 
