@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+include '../models/cadastroDao.php';
+include '../models/cadastro.php'; ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +20,7 @@
     <table class="table">
         <thead class="thead-dark">
         <tr>
+
             <th scope="col">Nome</th>
             <th scope="col">Sobrenome</th>
             <th scope="col">E-mail</th>
@@ -34,35 +38,36 @@
         </tr>
         </thead>
         <tbody>
-
+        <?php
+        $cadastroDao = new cadastroDao();
+        $cadastroDao->read();
+//        $cadastroDao->delete();
+        foreach ($cadastroDao->read() as $cadastroFuncionario):
+            ?>
             <tr>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>teste123</td>
-                <td>
-                    <form action="###" method="post">
-                        <input type="hidden" name="id" value="">
-                        <button type="btn" class="btn btn-danger">
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill"
-                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                      d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
-                            </svg>
-                        </button>
-                    </form>
-                </td>
-                <td><a class="btn btn-primary" href="editar-formulario.php">Alterar</a></td>
-            </tr>
+                <td><?= $cadastroFuncionario['nome'] ?></td>
+                <td><?= $cadastroFuncionario['sobrenome'] ?></td>
+                <td><?= $cadastroFuncionario['email'] ?></td>
+                <td><?= '#####' ?></td>
+                <td><?= $cadastroFuncionario['cpf'] ?></td>
+                <td><?= $cadastroFuncionario['carteiraTrabalho'] ?></td>
+                <td><?= $cadastroFuncionario['endereco'] ?></td>
+                <td><?= $cadastroFuncionario['estado'] ?></td>
+                <td><?= $cadastroFuncionario['cidade'] ?></td>
+                <td><?= $cadastroFuncionario['sexo'] ?></td>
+                <td><?= $cadastroFuncionario['estadoCivil'] ?></td>
+                <td><?= '######' ?></td>
 
+                <td>
+
+                        <a class="btn btn-danger" href="../controllers/deleteControle.php?id=<?= $cadastroFuncionario['id'] ?>">Deletar</a>
+
+                </td>
+                <td><a class="btn btn-primary" href="editar-formulario.php?id=<?= $cadastroFuncionario['id'] ?>">Alterar</a></td>
+            </tr>
+        <?php
+        endforeach
+        ?>
         </tbody>
     </table>
     <a href="index.html" class="btn btn-info">voltar</a>
