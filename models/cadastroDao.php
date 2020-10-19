@@ -41,21 +41,30 @@ VALUES (?,?,?,?,?,?,?,?,?,?)';
 
     public function update(cadastroFuncionario $p)
     {
-        $sql = 'UPDATE formulario SET id = ?, nome = ?,sobrenome = ?,email = ?,cpf = ?,carteiraTrabalho = ?,endereco = ?,estado = ?,cidade = ?,sexo = ?,estadoCivil = ? ';
+        $sql = 'UPDATE formulario SET  
+nome = ?,
+sobrenome = ?,
+email = ?,
+cpf = ?,
+carteiraTrabalho = ?,
+endereco = ?,
+estado = ?,
+cidade = ?,
+sexo = ?,
+estadoCivil = ?  where id = ?';
 
         $stmt = conexao::getConn()->prepare($sql);
-        $stmt->bindValue(1, $p->getId());
-        $stmt->bindValue(2, $p->getNome());
-        $stmt->bindValue(3, $p->getSobrenome());
-        $stmt->bindValue(4, $p->getEmail());
-        $stmt->bindValue(5, $p->getCpf());
-        $stmt->bindValue(6, $p->getCarteiraTrabalho());
-        $stmt->bindValue(7, $p->getEndereco());
-        $stmt->bindValue(8, $p->getEstado());
-        $stmt->bindValue(9, $p->getCidade());
-        $stmt->bindValue(10, $p->getSexo());
-        $stmt->bindValue(11, $p->getEstadoCivil());
-
+        $stmt->bindValue(1, $p->getNome());
+        $stmt->bindValue(2, $p->getSobrenome());
+        $stmt->bindValue(3, $p->getEmail());
+        $stmt->bindValue(4, $p->getCpf());
+        $stmt->bindValue(5, $p->getCarteiraTrabalho());
+        $stmt->bindValue(6, $p->getEndereco());
+        $stmt->bindValue(7, $p->getEstado());
+        $stmt->bindValue(8, $p->getCidade());
+        $stmt->bindValue(9, $p->getSexo());
+        $stmt->bindValue(10, $p->getEstadoCivil());
+        $stmt->bindValue(11, $p->getId());
 
         $stmt->execute();
 
@@ -68,12 +77,6 @@ VALUES (?,?,?,?,?,?,?,?,?,?)';
         $stmt = conexao::getConn()->prepare($sql);
         $stmt->bindValue(1, $id);
         $stmt->execute();
-
-//        if ($stmt){
-//            header("location: lista.php?removido=true");
-//        }
-
-
 
 
     }

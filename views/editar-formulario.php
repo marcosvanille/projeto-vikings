@@ -114,7 +114,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js
 "></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.5/jquery.inputmask.bundle.min.js"></script>
-<script src="/projetos/projeto-vikings/frontend/js/form.js"></script>
+<script src="/projetos/projeto-vikings/frontend/js/alterar.js"></script>
 </body>
 
 </body>

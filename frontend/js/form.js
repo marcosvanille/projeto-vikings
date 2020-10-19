@@ -69,7 +69,7 @@ $("#botao").click(function () {
         type: 'POST',
         data: $('#formulario').serialize(),
         // data: {
-        //     nome: $('#nome').val(),
+        //     nome: $('#nome').val(),  pegando o valor via ajax e nao pelo metodo POST
         //     sobrenome: $('#sobrenome').val()
         // },
         success: function (data) {
@@ -84,8 +84,6 @@ $("#botao").click(function () {
     return false;
 
 })
-
-
 
 
 
