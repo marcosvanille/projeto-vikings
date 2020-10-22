@@ -1,11 +1,16 @@
 <?php
+include '../models/cadastroDao.php';
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: Content-Type");
+header('Content-Type: application/json');
 
-$_GET['id'];
-
-//$query = "select * from formulario  where id = '{$_GET['id']}'" ;
-
+$id = $_GET['id'];
 $dados = [];
+$cadastroDao = new cadastroDao();
+$dados = $cadastroDao->funcionarioUnico($id);
 
-$q= $dados->prepare("SELECT name FROM `formulario` WHERE id = '{$_GET['id']}'");
-$q->execute([$userid]);
-$username = $q->fetchColumn();
+echo json_encode($dados);
+
+//var_dump($dados);
+
+

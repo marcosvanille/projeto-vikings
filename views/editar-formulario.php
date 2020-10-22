@@ -10,6 +10,7 @@
 <body>
 <body class="bg">
 <div class="container">
+
     <form action="" method="post" id="formulario">
         <h1 id="titulo">Alterar Cadastro de Funcionário</h1>
         <div class="form-row">
@@ -102,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-danger" >Alterar</button>
+        <button type="button" id="botao" class="btn btn-danger" >Alterar</button>
         <a href="lista.php" class="btn btn-primary">voltar</a></a>    </form>
 
 </div>

@@ -11,3 +11,4 @@ $delete->delete($id);
 if ($delete) {
     header("location: ../views/lista.php?removido=true");
 }
+

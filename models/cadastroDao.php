@@ -39,6 +39,23 @@ VALUES (?,?,?,?,?,?,?,?,?,?)';
         endif;
     }
 
+    public function funcionarioUnico($id)
+    {
+        $sql = "SELECT * FROM formulario WHERE id = ?";
+
+        $stmt = conexao::getConn()->prepare($sql);
+        $stmt->bindValue(1, $id);
+        $stmt->execute();
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+//        if ($stmt->rowCount() > 0):
+//            $resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+//            return $resultado;
+//        else:
+//            return [];
+//        endif;
+    }
+
     public function update(cadastroFuncionario $p)
     {
         $sql = 'UPDATE formulario SET  
