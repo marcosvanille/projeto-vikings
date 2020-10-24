@@ -58,8 +58,8 @@
 
         <div class="form-row">
             <div class="form-group col-md-3">
-                <label for="inputAddress" class="lb">Endereço</label>
-                <input type="text" class="form-control" name="endereco" id="inputAddress" placeholder="">
+                <label for="endereco" class="lb">Endereço</label>
+                <input type="text" class="form-control" name="endereco" id="endereco" placeholder="">
             </div>
 
             <div class="form-group col-md-3">
@@ -77,15 +77,16 @@
             <div class="col-md-4">
                 <label for="nome" class="lb">Sexo: </label>
 
+
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                           value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                    <input class="form-check-input" type="radio" name="sexo" id="masculino"
+                           value="m">
+                    <label class="form-check-label" for="masculino">Masculino</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                           value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Feminino</label>
+                    <input class="form-check-input" type="radio" name="sexo" id="feminino"
+                           value="f">
+                    <label class="form-check-label" for="feminino">Feminino</label>
                 </div>
             </div>
             <div class="col-md-4">

@@ -9,6 +9,14 @@ $.ajax({
     success: function (data) {
         $('#nome').val(data[0].nome);
         $('#sobrenome').val(data[0].sobrenome);
+        $('#email').val(data[0].email);
+        $('#cpf').val(data[0].cpf);
+        $('#cart').val(data[0].carteiraTrabalho);
+        $('#endereco').val(data[0].endereco);
+        $('#estado').val(data[0].estado);
+        $('#inputCidade').val(data[0].cidade);
+        $('#masculino').val(data[0].sexo);
+        $('#feminino').val(data[0].sexo);
         console.log(data);
     },
     error: function (data) {
