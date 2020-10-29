@@ -13,6 +13,7 @@
     <list default="true" id="9f8f7447-5786-4667-a177-52ebd0deb17b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/js/alterar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/alterar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/editar-formulario.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/editar-formulario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/lista.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/lista.php" afterDir="false" />
     </list>
@@ -45,7 +46,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Formulario-car" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -77,7 +78,9 @@
       <workItem from="1602363005419" duration="38469000" />
       <workItem from="1602689092572" duration="26705000" />
       <workItem from="1603070909897" duration="3901000" />
-      <workItem from="1603378630125" duration="7785000" />
+      <workItem from="1603378630125" duration="8629000" />
+      <workItem from="1603514122101" duration="599000" />
+      <workItem from="1603985449412" duration="11392000" />
     </task>
     <servers />
   </component>

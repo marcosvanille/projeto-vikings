@@ -31,12 +31,12 @@
                 <input type="email" class="form-control" name="email" id="email"/>
                 <span id="error-email"></span>
             </div>
-            <form>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1" class="lb">Adicionar Foto</label>
-                    <input type="file" class="form-control-file lb" id="exampleFormControlFile1">
-                </div>
-            </form>
+            <!--            <form>-->
+            <!--                <div class="form-group">-->
+            <!--                    <label for="exampleFormControlFile1" class="lb">Adicionar Foto</label>-->
+            <!--                    <input type="file" class="form-control-file lb" id="exampleFormControlFile1">-->
+            <!--                </div>-->
+            <!--            </form>-->
 
         </div>
         <div class="form-row">
@@ -72,39 +72,52 @@
             </div>
         </div>
         <div class="form-row">
-
-
-            <div class="col-md-4">
+            <div class="col-md-8">
                 <label for="nome" class="lb">Sexo: </label>
-
 
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="sexo" id="masculino"
-                           value="m">
-                    <label class="form-check-label" for="masculino">Masculino</label>
+                           value="casado">
+                    <label class="form-check-label" for="inlineRadio1">masculino</label>
                 </div>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="sexo" id="feminino"
-                           value="f">
-                    <label class="form-check-label" for="feminino">Feminino</label>
+                           value="solteiro">
+                    <label class="form-check-label" for="inlineRadio2">feminino</label>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <label for="nome" class="lb">Estado Civil: </label>
+
+                <label for="nome" class="lb" style="margin-left:90px">Estado Civil: </label>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="casado"
+                    <input class="form-check-input" type="radio" name="estadoCivil" id="casado"
                            value="casado">
                     <label class="form-check-label" for="inlineRadio1">Casado</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="solteiro"
+                    <input class="form-check-input" type="radio" name="estadoCivil" id="solteiro"
                            value="solteiro">
                     <label class="form-check-label" for="inlineRadio2">Solteiro</label>
                 </div>
             </div>
         </div>
-        <button type="button" id="botao" class="btn btn-danger" >Alterar</button>
+<!--        <div class="form-row">-->
+<!---->
+<!--            <div class="col-md-4">-->
+<!--                <label for="nome" class="lb">Estado Civil: </label>-->
+<!---->
+<!--                <div class="form-check form-check-inline">-->
+<!--                    <input class="form-check-input" type="radio" name="estadoCivil" id="casado"-->
+<!--                           value="casado">-->
+<!--                    <label class="form-check-label" for="inlineRadio1">Casado</label>-->
+<!--                </div>-->
+<!--                <div class="form-check form-check-inline">-->
+<!--                    <input class="form-check-input" type="radio" name="estadoCivil" id="solteiro"-->
+<!--                           value="solteiro">-->
+<!--                    <label class="form-check-label" for="inlineRadio2">Solteiro</label>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <button type="button" id="botao" class="btn btn-danger">Alterar</button>
         <a href="lista.php" class="btn btn-primary">voltar</a></a>    </form>
 
 </div>

@@ -1,7 +1,6 @@
 //Buscar informaçoes de unico funcionario.
 
 var urlParams = new URLSearchParams(window.location.search);
-// console.log(urlParams.get('id')); // "order"
 var id = urlParams.get('id');
 $.ajax({
     url: "http://localhost/projetos/projeto-vikings/controllers/funcionarioUnico.php?id=" + id,

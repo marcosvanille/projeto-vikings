@@ -37,8 +37,8 @@ $(document).ready(function () {
     $('#botaoTelefone').click(function () {
         var idTel = Math.floor(Math.random() * 100);
         $('#tel').append($('<input>', {
-            value: '',
-            text: '',
+            value: '0',
+            name : 'fone[]',
             id: 'inputTel_' + idTel
         }));
         $('#tel').append($('<button>', {

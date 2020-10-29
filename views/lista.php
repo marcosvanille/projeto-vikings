@@ -32,8 +32,8 @@ include '../models/cadastro.php'; ?>
             <th scope="col">Sexo</th>
             <th scope="col">Estado Civil</th>
             <th scope="col">Foto</th>
-            <th scope="col">Remover</th>
             <th scope="col">Alterar Dados</th>
+            <th scope="col">Remover</th>
         </tr>
         </thead>
         <tbody>
@@ -56,12 +56,8 @@ include '../models/cadastro.php'; ?>
                 <td><?= $cadastroFuncionario['estadoCivil'] ?></td>
                 <td><?= '######' ?></td>
 
-                <td>
-
-                        <a class="btn btn-danger" href="../controllers/deleteControle.php?id=<?= $cadastroFuncionario['id'] ?>">Deletar</a>
-
-                </td>
                 <td><a class="btn btn-primary" href="editar-formulario.php?id=<?= $cadastroFuncionario['id'] ?>">Alterar</a></td>
+                <td><a class="btn btn-danger" href="../controllers/deleteControle.php?id=<?= $cadastroFuncionario['id'] ?>">Deletar</a></td>
             </tr>
         <?php
         endforeach
