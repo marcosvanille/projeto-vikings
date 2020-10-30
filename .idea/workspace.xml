@@ -13,9 +13,6 @@
     <list default="true" id="9f8f7447-5786-4667-a177-52ebd0deb17b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/js/alterar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/alterar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/editar-formulario.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/editar-formulario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/lista.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/lista.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +77,7 @@
       <workItem from="1603070909897" duration="3901000" />
       <workItem from="1603378630125" duration="8629000" />
       <workItem from="1603514122101" duration="599000" />
-      <workItem from="1603985449412" duration="11392000" />
+      <workItem from="1603985449412" duration="12301000" />
     </task>
     <servers />
   </component>

@@ -19,7 +19,7 @@ $.ajax({
         console.log(data);
     },
     error: function (data) {
-        alert('Erro ao chamar requisiçao')
+        alert('Erro ao chamar requisiçao!')
     }
 
 });
