@@ -77,12 +77,12 @@
 
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="sexo" id="masculino"
-                           value="casado">
+                           value="m">
                     <label class="form-check-label" for="inlineRadio1">masculino</label>
                 </div>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="sexo" id="feminino"
-                           value="solteiro">
+                           value="f">
                     <label class="form-check-label" for="inlineRadio2">feminino</label>
                 </div>
 
@@ -90,12 +90,12 @@
 
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="estadoCivil" id="casado"
-                           value="casado">
+                           value="c">
                     <label class="form-check-label" for="inlineRadio1">Casado</label>
                 </div>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="estadoCivil" id="solteiro"
-                           value="solteiro">
+                           value="s">
                     <label class="form-check-label" for="inlineRadio2">Solteiro</label>
                 </div>
             </div>

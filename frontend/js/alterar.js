@@ -14,8 +14,16 @@ $.ajax({
         $('#endereco').val(data[0].endereco);
         $('#estado').val(data[0].estado);
         $('#inputCidade').val(data[0].cidade);
-        $('#masculino').val(data[0].sexo);
-        $('#feminino').val(data[0].sexo);
+        if (data[0].sexo == "m"){
+            $('#masculino').prop('checked',true);
+        }else {
+            $('#feminino').prop('checked',true);
+        }
+        if (data[0].estadoCivil == "c"){
+            $('#casado').prop('checked',true);
+        }else {
+            $('#solteiro').prop('checked',true);
+        }
         console.log(data);
     },
     error: function (data) {

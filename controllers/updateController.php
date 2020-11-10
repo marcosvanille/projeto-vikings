@@ -13,7 +13,7 @@ $endereco = $_POST['endereco'];
 $estado = $_POST['estado'];
 $cidade = $_POST['cidade'];
 $sexo = $_POST['sexo'];
-$estadocivil = $_POST['estadocivil'];
+$estadocivil = $_POST['estadoCivil'];
 
 $update = new cadastroDao();
 $alterar = new cadastroFuncionario();

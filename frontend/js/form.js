@@ -4,11 +4,11 @@ $(document).ready(function () {
         rules: {
             nome: {
                 required: true, /* Campo obrigatório */
-                minlength: 5    /* No mínimo 5 caracteres */
+                // minlength: 5    /* No mínimo 5 caracteres */
             },
             sobrenome: {
                 required: true, /* Campo obrigatório */
-                minlength: 5    /* No mínimo 5 caracteres */
+                // minlength: 5    /* No mínimo 5 caracteres */
             },
             email: {
                 required: true, /* Campo obrigatório */
